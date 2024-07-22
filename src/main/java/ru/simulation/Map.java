@@ -27,4 +27,12 @@ public class Map {
         cells.put(coordinates, entity);
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+    
 }
