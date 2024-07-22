@@ -1,3 +1,4 @@
+package main.java.ru.simulation;
 public abstract class Creature extends Entity {
     private int health;
     private int speed;
