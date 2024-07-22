@@ -1,4 +1,7 @@
-package main.java.ru.simulation;
+package main.java.ru.simulation.creatures;
+
+import main.java.ru.simulation.Entity;
+
 public abstract class Creature extends Entity {
     private int health;
     private int speed;
