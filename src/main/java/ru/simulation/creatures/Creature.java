@@ -29,4 +29,6 @@ public abstract class Creature extends Entity {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+    
 }

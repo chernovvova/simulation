@@ -2,6 +2,7 @@ package main.java.ru.simulation;
 public abstract class Entity {
     private int x;
     private int y;
+    private String entityType = "";
 
     public Entity(int x, int y) {
         this.x = x;
@@ -22,5 +23,13 @@ public abstract class Entity {
 
     public void setY() {
         this.y = y;
+    }
+
+    public String getEntityType() {
+        return entityType;
+    }
+
+    public void setEntityType(String entityType) {
+        this.entityType = entityType;
     }
 }
