@@ -34,5 +34,13 @@ public class Map {
     public int getHeight() {
         return height;
     }
-    
+
+    public HashMap<Coordinates, Entity> getCells() {
+        return cells;
+    }
+
+    public void setCells(HashMap<Coordinates, Entity> cells) {
+        this.cells = cells;
+    }
+
 }
