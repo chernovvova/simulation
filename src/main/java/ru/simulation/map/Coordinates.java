@@ -1,4 +1,4 @@
-package main.java.ru.simulation;
+package main.java.ru.simulation.map;
 
 public class Coordinates {
     private int x; 
@@ -8,7 +8,6 @@ public class Coordinates {
         this.x = x;
         this.y = y;
     }
-
     
     public int getX() {
         return x;

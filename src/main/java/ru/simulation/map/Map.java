@@ -1,6 +1,8 @@
-package main.java.ru.simulation;
+package main.java.ru.simulation.map;
 
 import java.util.HashMap;
+
+import main.java.ru.simulation.Entity;
 
 public class Map {
     private final int width;
@@ -43,4 +45,11 @@ public class Map {
         this.cells = cells;
     }
 
+    public boolean checkCoordinate(Coordinates coordinates) {
+        if(coordinates.getX() >= 0 && coordinates.getX() < width 
+            && coordinates.getY() >= 0 && coordinates.getY() < height) {
+                return true;
+            }
+        return false;
+    }
 }
