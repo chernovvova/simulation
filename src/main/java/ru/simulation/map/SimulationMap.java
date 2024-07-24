@@ -1,16 +1,17 @@
 package main.java.ru.simulation.map;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import main.java.ru.simulation.Entity;
 
-public class Map {
+public class SimulationMap {
     private final int width;
     private final int height;
 
     private HashMap<Coordinates, Entity> cells;
 
-    public Map(int width, int height) {
+    public SimulationMap(int width, int height) {
         this.width = width;
         this.height = height;
 
@@ -37,12 +38,8 @@ public class Map {
         return height;
     }
 
-    public HashMap<Coordinates, Entity> getCells() {
+    public Map<Coordinates, Entity> getCells() {
         return cells;
-    }
-
-    public void setCells(HashMap<Coordinates, Entity> cells) {
-        this.cells = cells;
     }
 
     public boolean checkCoordinate(Coordinates coordinates) {
