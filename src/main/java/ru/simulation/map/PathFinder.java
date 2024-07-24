@@ -11,10 +11,10 @@ import main.java.ru.simulation.creatures.Predator;
 import main.java.ru.simulation.objects.Grass;
 
 public class PathFinder {
-    private Map map;
+    private SimulationMap map;
     private Coordinates closestTargetCoordinates;
 
-    public PathFinder(Map map) {
+    public PathFinder(SimulationMap map) {
         this.map = map;
     }
 
@@ -44,7 +44,7 @@ public class PathFinder {
                 }
             }
         }
-        
+
         return paths;
     }
 
