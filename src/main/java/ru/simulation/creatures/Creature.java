@@ -30,5 +30,4 @@ public abstract class Creature extends Entity {
         this.speed = speed;
     }
 
-    
 }
